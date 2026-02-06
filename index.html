@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>LFS Academy | Learning for Success | SSC HSC Online Courses & Exams</title>
+  <meta name="description" content="LFS Academy বাংলাদেশের জনপ্রিয় EdTech প্ল্যাটফর্ম। SSC ও HSC অনলাইন কোর্স, লাইভ ক্লাস, অনলাইন এক্সাম, রেজাল্ট ও পারফরম্যান্স ট্র্যাকিং এক জায়গায়। Learning for Success." />
+  <meta name="keywords" content="LFS Academy, SSC online course, HSC online course, best edtech Bangladesh, SSC HSC exam platform, online exam BD" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LFS Academy | Learning for Success" />
+  <meta property="og:description" content="SSC ও HSC শিক্ষার্থীদের জন্য বাংলাদেশের স্মার্ট EdTech প্ল্যাটফর্ম।" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="bn_BD" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A8A',
+            secondary: '#FACC15',
+            neutral: '#0F172A'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-white text-neutral">
+
+<!-- HEADER -->
+<header class="bg-primary text-white sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">LFS Academy</h1>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#about" class="hover:text-secondary">আমাদের সম্পর্কে</a>
+      <a href="#services" class="hover:text-secondary">সার্ভিস</a>
+      <a href="#courses" class="hover:text-secondary">কোর্স</a>
+      <a href="#reviews" class="hover:text-secondary">রিভিউ</a>
+      <a href="#faq" class="hover:text-secondary">FAQ</a>
+    </nav>
+
+    <!-- Mobile Button -->
+    <button class="md:hidden" onclick="toggleMenu()">☰</button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-primary px-6 pb-4 space-y-2">
+    <a href="#about" class="block">আমাদের সম্পর্কে</a>
+    <a href="#services" class="block">সার্ভিস</a>
+    <a href="#courses" class="block">কোর্স</a>
+    <a href="#reviews" class="block">রিভিউ</a>
+    <a href="#faq" class="block">FAQ</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-primary text-white reveal">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Learning for Success</h2>
+    <p class="text-xl max-w-3xl mx-auto mb-8">
+      SSC ও HSC শিক্ষার্থীদের জন্য বাংলাদেশের ভবিষ্যৎ EdTech প্ল্যাটফর্ম
+    </p>
+    <div class="flex justify-center gap-4">
+      <a href="#courses" class="bg-secondary text-neutral px-8 py-3 rounded-lg font-semibold">কোর্স কিনুন</a>
+      <a href="#services" class="border border-white px-8 py-3 rounded-lg">আরও জানুন</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 reveal">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">LFS Academy কেন আলাদা?</h3>
+    <p class="max-w-4xl mx-auto text-lg">
+      LFS Academy বাংলাদেশের SSC ও HSC শিক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ অনলাইন শিক্ষা সমাধান।
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="bg-gray-50 py-20 reveal">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">আমাদের সার্ভিসসমূহ</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow">SSC & HSC কোর্স</div>
+      <div class="bg-white p-6 rounded-xl shadow">অনলাইন এক্সাম</div>
+      <div class="bg-white p-6 rounded-xl shadow">স্মার্ট রিপোর্ট</div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="py-20 reveal">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">জনপ্রিয় কোর্স</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="p-6 rounded-xl shadow">SSC Complete Course</div>
+      <div class="p-6 rounded-xl shadow">HSC Academic Mastery</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="bg-gray-50 py-20 reveal">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-12">শিক্ষার্থীদের মতামত</h3>
+    <p>বাংলাদেশের সেরা অনলাইন লার্নিং প্ল্যাটফর্ম</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 reveal">
+  <div class="max-w-5xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">সাধারণ প্রশ্ন</h3>
+    <p>SSC ও HSC অনলাইন এক্সাম দেওয়া যাবে।</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-neutral text-white py-8 text-center">
+  <p>© 2026 LFS Academy — Learning for Success</p>
+  <p class="text-sm">Developed by bitnbyteit.com</p>
+</footer>
+
+<!-- JS -->
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  }
+
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  reveals.forEach(r => observer.observe(r));
+</script>
+
+</body>
+</html>
