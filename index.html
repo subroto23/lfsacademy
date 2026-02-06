@@ -44,123 +44,190 @@
       transform: translateY(0);
     }
   </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZH3LDNNX9S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZH3LDNNX9S');
+  </script>
 </head>
+
 <body class="bg-white text-neutral">
 
-<!-- HEADER -->
-<header class="bg-primary text-white sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">LFS Academy</h1>
+  <!-- HEADER -->
+  <header class="bg-primary text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">LFS Academy</h1>
 
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6">
-      <a href="#about" class="hover:text-secondary">আমাদের সম্পর্কে</a>
-      <a href="#services" class="hover:text-secondary">সার্ভিস</a>
-      <a href="#courses" class="hover:text-secondary">কোর্স</a>
-      <a href="#reviews" class="hover:text-secondary">রিভিউ</a>
-      <a href="#faq" class="hover:text-secondary">FAQ</a>
-    </nav>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#about" class="hover:text-secondary transition">আমাদের সম্পর্কে</a>
+        <a href="#services" class="hover:text-secondary transition">সার্ভিস</a>
+        <a href="#courses" class="hover:text-secondary transition">কোর্স</a>
+        <a href="#faq" class="hover:text-secondary transition">FAQ</a>
+        <a href="#contact" class="hover:text-secondary transition">যোগাযোগ</a>
+      </nav>
 
-    <!-- Mobile Button -->
-    <button class="md:hidden" onclick="toggleMenu()">☰</button>
-  </div>
+      <!-- Mobile Button -->
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+    </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-primary px-6 pb-4 space-y-2">
-    <a href="#about" class="block">আমাদের সম্পর্কে</a>
-    <a href="#services" class="block">সার্ভিস</a>
-    <a href="#courses" class="block">কোর্স</a>
-    <a href="#reviews" class="block">রিভিউ</a>
-    <a href="#faq" class="block">FAQ</a>
-  </div>
-</header>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-primary px-6 pb-4 space-y-2">
+      <a href="#about" class="block">আমাদের সম্পর্কে</a>
+      <a href="#services" class="block">সার্ভিস</a>
+      <a href="#courses" class="block">কোর্স</a>
+      <a href="#reviews" class="block">রিভিউ</a>
+      <a href="#faq" class="block">FAQ</a>
+      <a href="#contact" class="block">যোগাযোগ</a>
+    </div>
+  </header>
 
-<!-- HERO -->
-<section class="bg-primary text-white reveal">
-  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Learning for Success</h2>
-    <p class="text-xl max-w-3xl mx-auto mb-8">
-      SSC ও HSC শিক্ষার্থীদের জন্য বাংলাদেশের ভবিষ্যৎ EdTech প্ল্যাটফর্ম
-    </p>
+  <!-- HERO -->
+  <section class="bg-primary text-white reveal">
+    <div class="max-w-7xl mx-auto px-6 py-32 text-center">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Learning for Success</h2>
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10">
+        SSC ও HSC শিক্ষার্থীদের জন্য বাংলাদেশের আধুনিক EdTech প্ল্যাটফর্ম
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="#courses" class="bg-secondary text-neutral px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition">কোর্স কিনুন</a>
+        <a href="#services" class="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-primary transition">আরও জানুন</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 reveal bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">কেন LFS Academy আলাদা?</h3>
+      <p class="max-w-4xl mx-auto text-lg mb-8">
+        LFS Academy বাংলাদেশের SSC ও HSC শিক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ অনলাইন শিক্ষা সমাধান। 
+        আমরা প্রদান করি লাইভ ক্লাস, অনলাইন এক্সাম, পারফরম্যান্স ট্র্যাকিং, এবং স্মার্ট রিপোর্ট যা আপনার প্রস্তুতিকে আরও শক্তিশালী করে।
+      </p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+          <h4 class="font-bold text-xl mb-2">লাইভ ক্লাস</h4>
+          <p>সরাসরি অভিজ্ঞ শিক্ষক দ্বারা পাঠদান, যেকোনো স্থান থেকে ক্লাসে যোগ দিন।</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+          <h4 class="font-bold text-xl mb-2">অনলাইন এক্সাম</h4>
+          <p>প্রকৃত পরীক্ষা পরিবেশের অভিজ্ঞতা, স্বয়ংক্রিয় স্কোর ও বিশ্লেষণ।</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+          <h4 class="font-bold text-xl mb-2">স্মার্ট রিপোর্ট</h4>
+          <p>আপনার পারফরম্যান্স বিশ্লেষণ করে দুর্বল দিক চিহ্নিত করা।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">আমাদের সার্ভিসসমূহ</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">SSC & HSC কোর্স</h4>
+          <p>পুরো সিলেবাস কাভার করা কোর্সসমূহ, সহজ ও সুসংগঠিত পাঠ পরিকল্পনা।</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">অনলাইন এক্সাম</h4>
+          <p>মক টেস্ট ও পূর্ণাঙ্গ অনলাইন পরীক্ষার মাধ্যমে প্রস্তুতি বৃদ্ধি।</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="font-bold text-xl mb-2">স্মার্ট রিপোর্ট</h4>
+          <p>প্রতিটি টেস্টের বিশ্লেষণ, দুর্বল বিষয় চিহ্নিত ও উন্নতির পরামর্শ।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="py-20 reveal bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">জনপ্রিয় কোর্সসমূহ</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+          <h4 class="font-bold text-xl mb-2">SSC Complete Course</h4>
+          <p>সকল বিষয় ও অধ্যায় সম্পূর্ণভাবে কভার করা, ১ ক্লিকেই সব কিছু শিখুন।</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+          <h4 class="font-bold text-xl mb-2">HSC Academic Mastery</h4>
+          <p>উচ্চতর জ্ঞান অর্জনের জন্য বিশেষ পরিকল্পিত কোর্স।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- FAQ -->
+  <section id="faq" class="py-20 reveal bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">সাধারণ প্রশ্ন</h3>
+      <div class="space-y-4">
+        <div>
+          <h4 class="font-semibold mb-1">SSC ও HSC অনলাইন এক্সাম দেওয়া যাবে কি?</h4>
+          <p>হ্যাঁ, আমাদের অনলাইন এক্সাম প্ল্যাটফর্মে SSC ও HSC পরীক্ষার প্রস্তুতি নেওয়া যায়।</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-1">লাইভ ক্লাস কখন শুরু হয়?</h4>
+          <p>লাইভ ক্লাস প্রতি সপ্তাহে নির্ধারিত সময়ে অনুষ্ঠিত হয় এবং রেকর্ডেড ক্লাসও পাওয়া যায়।</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-1">কোর্স কীভাবে কিনতে হবে?</h4>
+          <p>আপনি আমাদের কোর্স পেজ থেকে পছন্দসই কোর্স বেছে নিয়ে সহজে ক্রয় করতে পারেন।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 reveal">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-6">যোগাযোগ করুন</h3>
+      <p class="mb-6">আপনার যে কোনো প্রশ্ন বা সহযোগিতার জন্য আমাদের সাথে যোগাযোগ করুন।</p>
+      <form class="grid gap-4">
+        <input type="text" placeholder="আপনার নাম" class="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"/>
+        <input type="email" placeholder="আপনার ইমেইল" class="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"/>
+        <textarea placeholder="আপনার বার্তা" class="p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+        <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary hover:text-neutral transition">পাঠান</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-neutral text-white py-10 text-center">
+    <p>© ২০২৬ LFS Academy — Learning for Success</p>
+    <p class="text-sm mb-4">Developed by bitnbyteit.com</p>
     <div class="flex justify-center gap-4">
-      <a href="#courses" class="bg-secondary text-neutral px-8 py-3 rounded-lg font-semibold">কোর্স কিনুন</a>
-      <a href="#services" class="border border-white px-8 py-3 rounded-lg">আরও জানুন</a>
+      <a href="#" class="hover:text-secondary transition">Facebook</a>
+      <a href="#" class="hover:text-secondary transition">YouTube</a>
+      <a href="#" class="hover:text-secondary transition">Instagram</a>
+      <a href="#" class="hover:text-secondary transition">LinkedIn</a>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ABOUT -->
-<section id="about" class="py-20 reveal">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold mb-6">LFS Academy কেন আলাদা?</h3>
-    <p class="max-w-4xl mx-auto text-lg">
-      LFS Academy বাংলাদেশের SSC ও HSC শিক্ষার্থীদের জন্য একটি পূর্ণাঙ্গ অনলাইন শিক্ষা সমাধান।
-    </p>
-  </div>
-</section>
+  <!-- JS -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
 
-<!-- SERVICES -->
-<section id="services" class="bg-gray-50 py-20 reveal">
-  <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-12">আমাদের সার্ভিসসমূহ</h3>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow">SSC & HSC কোর্স</div>
-      <div class="bg-white p-6 rounded-xl shadow">অনলাইন এক্সাম</div>
-      <div class="bg-white p-6 rounded-xl shadow">স্মার্ট রিপোর্ট</div>
-    </div>
-  </div>
-</section>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.2 });
 
-<!-- COURSES -->
-<section id="courses" class="py-20 reveal">
-  <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-12">জনপ্রিয় কোর্স</h3>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="p-6 rounded-xl shadow">SSC Complete Course</div>
-      <div class="p-6 rounded-xl shadow">HSC Academic Mastery</div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section id="reviews" class="bg-gray-50 py-20 reveal">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h3 class="text-3xl font-bold mb-12">শিক্ষার্থীদের মতামত</h3>
-    <p>বাংলাদেশের সেরা অনলাইন লার্নিং প্ল্যাটফর্ম</p>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="py-20 reveal">
-  <div class="max-w-5xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-12">সাধারণ প্রশ্ন</h3>
-    <p>SSC ও HSC অনলাইন এক্সাম দেওয়া যাবে।</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-neutral text-white py-8 text-center">
-  <p>© 2026 LFS Academy — Learning for Success</p>
-  <p class="text-sm">Developed by bitnbyteit.com</p>
-</footer>
-
-<!-- JS -->
-<script>
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('hidden');
-  }
-
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
-  }, { threshold: 0.2 });
-
-  reveals.forEach(r => observer.observe(r));
-</script>
+    reveals.forEach(r => observer.observe(r));
+  </script>
 
 </body>
 </html>
